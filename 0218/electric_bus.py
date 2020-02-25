@@ -1,8 +1,8 @@
 import sys
 sys.stdin = open('prac.txt','r')
 
-TC = int(input())
-for tc in range(1, TC+1):
+T = int(input())
+for t in range(T):
     K,N,M = map(int,input().split())
     station = list(map(int, input().split()))
     station_lst = [0] * (N+1)
@@ -32,4 +32,4 @@ for tc in range(1, TC+1):
         if end >= N:
             break
 
-    print(f'#{tc} {cnt}')
+    print(f'{t+1} {cnt}')
